@@ -6,26 +6,6 @@ nombresDeAmigos.push('Serna', 'Edier', 'Juan David', 'Alejandro');
 console.log(nombresDeAmigos);
 
 
-function actualizarListaDeAmigos() {
-  // Obtener el elemento de la lista HTML donde se mostrarán los amigos
-  const listaAmigos = document.getElementById("listaAmigos");
-
-  // Limpiar la lista existente
-  listaAmigos.innerHTML = "";
-
-  // Iterar sobre el arreglo `nombresDeAmigos` para agregar cada nombre como un elemento <li>
-  for (let i = 0; i < nombresDeAmigos.length; i++) {
-    // Crear un nuevo elemento <li>
-    let li = document.createElement("li");
-
-    // Asignar el nombre del amigo como texto del <li>
-    li.textContent = nombresDeAmigos[i];
-
-    // Agregar el <li> como hijo de la lista HTML
-    listaAmigos.appendChild(li);
-  }
-}
-
 
 function agregarAmigo() {
     // Capturar el valor del campo de entrada
